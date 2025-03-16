@@ -1,5 +1,6 @@
 {
     "name": "e98developer/laravel-changelog-manager",
+    "version": "0.0.1",
     "description": "Changelog manager for laravel",
     "type": "library",
     "require": {
