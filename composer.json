@@ -1,0 +1,30 @@
+{
+    "name": "e98developer/laravel-changelog-manager",
+    "description": "Changelog manager for laravel",
+    "type": "library",
+    "require": {
+        "phlak/semver": "^6.1",
+        "laravel/prompts": "^0.3.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "E98Developer",
+            "email": "developer@e98.hu"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "E98Developer\\LaravelChangelogManagerPackage\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "E98Developer\\LaravelChangelogManagerPackage\\LaravelChangelogManagerServiceProvider"
+            ]
+        }
+    }
+
+}
