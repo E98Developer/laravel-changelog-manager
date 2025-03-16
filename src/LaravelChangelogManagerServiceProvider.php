@@ -3,6 +3,7 @@
 namespace E98Developer\LaravelChangelogManagerPackage;
 
 
+use E98Developer\LaravelChangelogManagerPackage\Commands\ChangelogAddCommand;
 use E98Developer\LaravelChangelogManagerPackage\Commands\ChangelogInitCommand;
 use E98Developer\LaravelChangelogManagerPackage\Commands\ChangelogReleaseCommand;
 use Illuminate\Support\ServiceProvider;
@@ -32,7 +33,8 @@ class LaravelChangelogManagerServiceProvider extends ServiceProvider
             $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
             $this->commands([
                 ChangelogInitCommand::class,
-                ChangelogReleaseCommand::class
+                ChangelogReleaseCommand::class,
+                ChangelogAddCommand::class
             ]);
         }
     }
